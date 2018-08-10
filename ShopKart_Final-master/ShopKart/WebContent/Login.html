@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Shop Kart</title>
+<style>
+.txt {
+	width: 300px;
+	height: 30px;
+	border:2px solid black;
+	border-radius:3px;
+	font-family:"Comic Sans MS";
+	font-size:18px;
+}
+body{
+	font-family:"Comic Sans MS";
+	text-align:center;
+	}
+.btn{
+	font-family:"Comic Sans MS";
+	background-color:grey;
+	border:2px solid black;
+	width:200px;
+	color:white;
+	padding:10px;
+	border-radius:3px;
+}
+div{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image:url("Images/PageWallpaper.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	opacity:0.6;
+	z-index:-1;
+}
+</style>
+</head>
+<body>	
+<div></div>
+<img src="Images/logofinal.png" height="100px" width="100px">
+<h1>Login</h1>
+<hr/>
+	<form action="http://localhost:8081/ShopKart/LoginCheck" method="post">
+		<table align="center" cellpadding="10px">
+			<tr>
+				<td style="text-align:left;">User Name:</td>
+				<td><input type="Text" class="txt" name="userName" required></td>
+			</tr>
+			<tr>
+				<td style="text-align:left;">Password:</td>
+				<td><input type="Password" class="txt" name="password" required></td>
+			</tr>
+			</table>
+			<table align="center">
+			<tr>
+				<td ><input type="Submit" class="btn" value="Login">
+			</form>
+			<br/>
+			<br/>
+			<form action="http://localhost:8081/ShopKart/RegistrationServlet">
+			<input type="submit" class="btn" value="Register">
+			</form>
+			</td>
+			</tr>
+			
+		</table>
+</body>
+</html>
